@@ -1,0 +1,55 @@
+get api/menu-items/
+
+-------------------------------------------------------
+
+get api/metrics/ ? filters, pagination, sort
+
+-------------------------------------------------------
+
+get api/customers/id? ? filters, pagination, sort
+
+post api/customers/
+
+put api/customers/id
+
+delete api/customers/id
+
+-------------------------------------------------------
+
+get api/engineers/id? ? filters, pagination, sort
+
+post api/engineers/
+
+get api/engineers/id/jobs
+
+-------------------------------------------------------
+
+get api/jobs/id/files/engineer
+
+post api/jobs/id/files/engineer
+
+delete api/jobs/id/files/engineer
+
+get api/jobs/id/files/office
+
+post api/jobs/id/files/office
+
+delete api/jobs/id/files/office
+
+-------------------------------------------------------
+
+
+get api/jobs/id? ? filters, pagination, sort
+
+post api/jobs
+
+put api/jobs/id
+
+delete api/jobs/id
+
+-------------------------------------------------------
+
+post api/users/invitation
+
+
+
