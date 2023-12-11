@@ -1,0 +1,35 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "Customer": {
+                "id": 1,
+                "name": "John"
+            },
+            "location": {
+                "name": "Caffe Nero",
+                "address": "Address 1",
+                "city": "City 1",
+                "post code": "Zip 1"
+            },
+            "date": "2017-01-01",
+            "time": "10:00:00",
+            "duration": 60,
+            "status": "assigned",
+            "engineer": {
+                "id": 1,
+                "name": "John"
+            },
+            "description": "Description 1"
+        }
+    ],
+    "meta": {
+        "totalRecords": 1,
+        "filter": "name~eq~'John'",
+        "sort": "age,asc",
+        "pageSize": 10,
+        "currentPage": 1,
+        "totalPages": 1
+    }
+}

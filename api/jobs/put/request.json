@@ -1,0 +1,15 @@
+{
+    "customerId": 1,
+    "jobTypeId": 1,
+    "date": "2019-01-01",
+    "time": "09:00",
+    "duration": 60,
+    "location": {
+        "name": "Caffe Nero",
+        "address": "Address 1",
+        "city": "City 1",
+        "post code": "Zip 1"
+    },
+    "engineerId": 1,
+    "description": "Description 1"
+}

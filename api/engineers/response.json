@@ -1,0 +1,31 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "name": "Engineer 1",
+            "home": {
+                "address": "Address 1",
+                "city": "City 1",
+                "post code": "Zip 1"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Engineer 2",
+            "home": {
+                "address": "Address 1",
+                "city": "City 1",
+                "post code": "Zip 1"
+            }
+        }
+    ],
+    "meta": {
+        "totalRecords": 2,
+        "filter": "name~eq~'John'",
+        "sort": "age,asc",
+        "pageSize": 10,
+        "currentPage": 1,
+        "totalPages": 1
+    }
+}

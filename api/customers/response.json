@@ -1,0 +1,21 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": 1,
+            "name": "Customer name"
+        },
+        {
+            "id": 2,
+            "name": "Customer name"
+        }
+    ],
+    "meta": {
+        "totalRecords": 2,
+        "filter": "name~eq~'John'",
+        "sort": "age,asc",
+        "pageSize": 10,
+        "currentPage": 1,
+        "totalPages": 1
+    }
+}
