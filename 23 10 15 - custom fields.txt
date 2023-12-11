@@ -1,0 +1,53 @@
+I want the system to perform certain  customer defined actions based on the custom fields. For example if the custom field is Requires Cisco Certification then I want the system to filter the suggested engineer for the jobs by this requirement. But again this can be differnet per customer
+
+CREATE TABLE Job (
+    ID INT PRIMARY KEY,
+    Location VARCHAR(255),
+    Description TEXT,
+    -- Add other standard job fields
+);
+CREATE TABLE CustomField (
+    ID INT PRIMARY KEY,
+    FieldName VARCHAR(255),
+    FieldType VARCHAR(50),  -- Data type (e.g., text, date, boolean, etc.)
+    CustomerID INT,        -- Foreign key to customer
+);
+CREATE TABLE CustomFieldValue (
+    ID INT PRIMARY KEY,
+    JobID INT,              -- Foreign key to job
+    CustomFieldID INT,      -- Foreign key to custom field
+    Value TEXT,            -- Store the actual value (use appropriate data type for the value)
+);
+CREATE TABLE Customer (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Description TEXT,
+    -- Add other customer-specific attributes
+);
+
+CREATE TABLE Rule (
+    ID INT PRIMARY KEY,
+    CustomerID INT,     -- Foreign key to customer
+    FieldName VARCHAR(255),
+    Operator VARCHAR(50),  -- Operators like 'equals,' 'greater than,' 'less than,' etc.
+    Value TEXT,         -- The value to compare against
+    ActionType VARCHAR(50),  -- Action to perform (e.g., filter engineer)
+);
+The ActionType field in the Rule table can define different actions, such as "filter engineer," "notify administrator," or other customer-specific actions.
+
+CREATE TABLE EngineerCustomField (
+    ID INT PRIMARY KEY,
+    EngineerID INT,     -- Foreign key to engineer
+    FieldName VARCHAR(255),
+    Value TEXT,
+    CustomerID INT,     -- Foreign key to customer
+);
+CREATE TABLE Rule (
+    ID INT PRIMARY KEY,
+    CustomerID INT,
+    FieldName VARCHAR(255),
+    Operator VARCHAR(50),
+    Value TEXT,
+    ActionType VARCHAR(50),
+    RuleType VARCHAR(50);  -- 'Job' or 'Engineer'
+);

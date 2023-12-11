@@ -1,0 +1,55 @@
+field workforce management
+ - Office: schedule engineers to do jobs
+ - Engineer: see list of jobs and complete jobs
+ - Admin: add, edit, delete office users and engineers and admins
+
+Office
+ - create jobs
+ - - Add customers
+
+ - assign jobs
+ - delete jobs
+ - edit jobs
+ - view jobs / list / map / all jobs / per engineer
+ - view engineers
+ - reschedule jobs
+
+Engineer
+ - view jobs
+ - complete jobs / upload pictures 
+
+Admin
+ - CRUD office users
+ - CRUD engineers
+ - CRUD admins
+
+
+Objects
+ - Job
+ - Engineer
+ - Customer
+ - Job Status
+ - Engineer Status
+ - Engineer Type
+
+Job
+ - Id
+ - Location
+ - Description
+
+Engineer 
+ - Id
+ - Name
+ - Description
+
+Customer
+ - Id
+ - Name
+ - Description
+
+Connections:
+JobCustomer
+JobEngineer
+JobStatus
+EngineerStatus
+
