@@ -1,0 +1,15 @@
+{
+    "filters": {
+        "status": "open"
+    },
+    "sort": {
+        "by": "date",
+        "order": "asc"
+    },
+    "pagination": {
+        "current_page": 1,
+        "per_page": 10,
+        "total_pages": 5,
+        "total_items": 50
+    }
+}
