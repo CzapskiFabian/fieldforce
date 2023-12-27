@@ -1,0 +1,5 @@
+On Success - 204
+Not Found - 404
+Forbidden - 403
+Unauthorized - 401
+Bad request - 400
