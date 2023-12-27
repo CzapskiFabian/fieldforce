@@ -3,11 +3,13 @@
     "data": [
         {
             "id": 1,
-            "name": "Customer name"
+            "name": "Customer name",
+            "address":{}
         },
         {
             "id": 2,
-            "name": "Customer name"
+            "name": "Customer name",
+            "address":{}
         }
     ],
     "meta": {

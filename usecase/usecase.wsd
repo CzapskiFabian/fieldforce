@@ -1,0 +1,51 @@
+@startuml
+left to right direction
+actor "Office User" as o
+rectangle "Office Front end" as OfficeFrontEnd {
+  usecase "Add Job" as OUC1
+  usecase "View Job" as OUC2
+  usecase "List Jobs" as OUC3
+  usecase "Edit Job" as OUC4
+  usecase "View Engineer" as OUC5
+  usecase "List Engineers" as OUC6
+}
+o --> OUC1
+o --> OUC2
+o --> OUC3
+o --> OUC4
+o --> OUC5
+o --> OUC6
+
+actor "Engineer" as e
+rectangle "Engineer Front end" as EngineerFrontEnd {
+  usecase "View Job" as EUC1
+  usecase "List Jobs" as EUC2
+  usecase "Complete Job" as EUC3
+  usecase "Edit Job" as EUC4
+}
+
+e --> EUC1
+e --> EUC2
+e --> EUC3
+e --> EUC4
+
+actor "Admin User" as a
+rectangle "Admin Front end" as AdminFrontEnd {
+  usecase "View Engineers" as AUC1
+  usecase "View Office Users" as AUC2
+  usecase "Add Engineer" as AUC3
+  usecase "Edit Engineer" as AUC4
+  usecase "Delete Engineer" as AUC5
+  usecase "Add Office User" as AUC6
+  usecase "Edit Office User" as AUC7
+  usecase "Delete Office User" as AUC8
+}
+a --> AUC1
+a --> AUC2
+a --> AUC3
+a --> AUC4
+a --> AUC5
+a --> AUC6
+a --> AUC7
+a --> AUC8
+@enduml

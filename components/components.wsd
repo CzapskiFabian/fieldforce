@@ -1,0 +1,26 @@
+@startuml
+[CustomerManagement] -- IGetCustomers
+
+[EngineerManagement] -- IGetEngineers
+[EngineerManagement] -- ICreateEngineer
+
+[FileManagement] -- IGetFiles
+[FileManagement] -- IUploadFiles
+
+[JobManagement] -- IGetJobs
+[JobManagement] -- ICreateJob
+[JobManagement] -- IDeleteJob
+[JobManagement] -- IUpdateJob
+
+[Scheduler] -- ISuggestEngineers 
+[Scheduler] -- IGetSchedule 
+[Scheduler] --( IGetEngineers
+
+[CustomerManagement] --down( IAddFields
+[EngineerManagement] --down( IAddFields
+[JobManagement] --down( IAddFields 
+[FileManagement] --down( IAddFields 
+
+IAddFields -- [Aggregator]
+[Aggregator] -- IGetList
+@enduml
